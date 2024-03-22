@@ -8,7 +8,9 @@
     --verdeClaro:#01f482;
     --negro:#191e29;
     --azulObscuro:#132d45;
+    --debajoHeader: #adb8cc3a;
     --azulClaro:#2550f5;
+    --azulMescla:#484e91;
     --grisClaro:#696e79;
     --grisObscuro:#232536;
     --blanco:#f5f5f5;
@@ -39,6 +41,10 @@ a{
     color: var(--negro);
     font-family: var(--Letra);
     font-size: 2rem;
+}
+.Ofrecemos{
+    font-family: var(--Letra);
+    font-size: 1em;
 }
 /*FIN ESTILOS DE LETRAS, TAMANIOS Y DEMAS DETALLES*/
 
@@ -152,15 +158,17 @@ header{
 .Principal{
     padding: 2em 0 2em 0;
     text-align: center;
-    background-color: var(--blanco);
+    background-color: var(--debajoHeader);
 }
 .Principal > h2{
     margin: 1em 0 0 0;
+    width: 100%;
+    margin: auto;
 }
 
 .texto{
     width: 90%;
-    margin: 3em auto;
+    margin: 2em auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
     grid-template-rows: repeat(1, auto);
@@ -170,10 +178,71 @@ header{
 
 .texto > p{
     background-color: #ffffff;
-    box-shadow: 2px 5px 10px rgb(139, 139, 139);
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
     padding: 10px;
     text-align: left;
     font-size: 1.3rem;
-    font-family: var(--Letra);
     border-radius: 10px;
+}
+.texto p > span{
+    color: var(--azulMescla);
+    transition: ease-in-out .3s;
+}
+.texto p > span:hover{
+    color: var(--azulClaro);
+}
+
+
+
+/*CARACTERISTICAS*/
+#Ofrecemos{
+    width: 100%;
+}
+#Ofrecemos > h3{
+    margin: 1em auto;
+    padding:1em 0 0 0;
+    width: 78%;
+   text-align: left;
+}
+.container-ventajas{
+    width: 80%;
+    display: grid;
+    margin: 1em auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1em;
+}
+.container-ventajas > p{
+    margin: 1em;
+}
+.container-ventajas p > svg{
+  
+  fill: var(--verde);
+}
+
+.contacto{
+    background-color: var(--amarilloFuerte);
+    border: solid;
+}
+
+.contacto > h3{
+    border: solid;
+    text-align: center;
+}
+.contacto > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 2em;
+    padding: 1em 0 1em 0;
+}
+.contacto div > button{
+    background-color: var(--naranja);
+}
+
+
+
+footer{
+    margin: 3em 0 auto;
+    background-color: var(--azulObscuro);
+    height: 400px;
 }
