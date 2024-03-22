@@ -33,7 +33,7 @@ a{
     letter-spacing: .2em;
 }
 .Principal > h2{
-    color: var(--verde);
+    color: var(--azulMescla);
     font-family: var(--Letra);
     font-size: 2.8rem;
 }
@@ -50,12 +50,15 @@ a{
 
 /*COMIENZO MENU-HEADER*/
 header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
     padding: 10px 0 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--negro);
-  border-bottom:2px solid var(--verde) ;
+  border-bottom:2px solid var(--azulClaro) ;
 }
 .Logo{
     border: solid;
@@ -67,8 +70,8 @@ header{
 }
 .Logo:hover{
     border-radius:  10px 0 10px 0 ;
-    color: var(--Rojo);
-    background-color: red;
+    color: var(--azulMescla);
+    background-color: var(--azulMescla);
 }
 .container{
     min-width: 50%;
@@ -124,6 +127,8 @@ header{
         display: grid;
         height: 800px;
        background-color: transparent;
+       display:none;
+       
     }
     .olMenu{
         position: absolute;
@@ -141,12 +146,12 @@ header{
         padding: 5em 0 10px 0;
         background-color: var(--negro);
         border-radius: 10px 0 0 10px; 
-       
     }
     .activo{
+        
         transform: translateX(0em);
         transition: transform ease-in-out .5s;
-        
+        display: grid;
     }
     .olMenu li > a{
         text-decoration: none;
@@ -156,7 +161,7 @@ header{
 
 /*COMIENZO MAIN*/
 .Principal{
-    padding: 2em 0 2em 0;
+    padding: 7em 0 2em 0;
     text-align: center;
     background-color: var(--debajoHeader);
 }
@@ -167,22 +172,16 @@ header{
 }
 
 .texto{
-    width: 90%;
+    width: 80%; max-width: 800px;
     margin: 2em auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-    grid-template-rows: repeat(1, auto);
-    justify-content: space-around;
-    gap: 1em;
+    border-radius: 10px;
 }
 
 .texto > p{
-    background-color: #ffffff;
-    box-shadow: 2px 5px 10px rgb(0, 0, 0);
     padding: 10px;
     text-align: left;
     font-size: 1.3rem;
-    border-radius: 10px;
+   
 }
 .texto p > span{
     color: var(--azulMescla);
@@ -196,6 +195,7 @@ header{
 
 /*CARACTERISTICAS*/
 #Ofrecemos{
+    margin: 5em auto;
     width: 100%;
 }
 #Ofrecemos > h3{
@@ -213,36 +213,58 @@ header{
 }
 .container-ventajas > p{
     margin: 1em;
+    font-size: 1.2em;
 }
 .container-ventajas p > svg{
-  
   fill: var(--verde);
 }
 
-.contacto{
-    background-color: var(--amarilloFuerte);
-    border: solid;
+#contacto{
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: co;
+   background: linear-gradient(to top, var(--azulObscuro) 10%, #edecec 80%);
 }
 
-.contacto > h3{
-    border: solid;
+#contacto > h3{
+    padding: 1em 0 0 0;
     text-align: center;
+    font-family: var(--Letra);
+    color: var(--azulMescla);
+    font-size: 1.5em;
 }
-.contacto > div{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: repeat(auto);
-    gap: 2em;
-    padding: 1em 0 1em 0;
+#contacto > div{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1em 0 5em 0;
 }
-.contacto div > button{
-    background-color: var(--naranja);
+#contacto div > button{
+    border-radius: 10px;
+    transition: ease .3s;
+    cursor: pointer;
+    width: 200px;height: 50px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    margin: 1em auto;
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
+}
+#contacto div > button:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 7px 5px rgb(0, 0, 0);
+    background: linear-gradient(to right, var(--verde) 0%, var(--verdeClaro) 50%);
 }
 
 
 
 footer{
-    margin: 3em 0 auto;
+    margin:0 auto;
     background-color: var(--azulObscuro);
-    height: 400px;
+    height: 200px;
+}
+.footer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+   
 }
