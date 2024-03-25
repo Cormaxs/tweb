@@ -3,10 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'logo';
+    src: url("LETRAS/Sharpie_Complete-LOGO/Fonts/Variable/Sharpie-Variable.ttf");
+}
+@font-face {
+    font-family: 'poppins';
+    src: url("LETRAS/Poppins_Complete/Fonts/Variable/Poppins-Variable.ttf");
+}
+@font-face {
+    font-family: 'final';
+    src: url("LETRAS/Kalam_Complete/Fonts/Variable/Kalam-Variable.ttf");
+}
 :root{
     --verde:#01c38d;
     --verdeClaro:#01f482;
+    --verdeLima:#77D970;
     --negro:#191e29;
+    --azulMarino:#000080 ;
+    --rojoIntenso:#D50000 ;
+    --grisOscuro:#333333;
+    --amarilloMostaza:#F5D033;
+    --morado:#673AB7;
+    --naranjaIntenso:#FF7F50;
+    --azulElectrico:#03A9F4;
+    --azulCeleste:#2196F3 ;
+    --beigeCalido:#F9E79F ;
     --azulObscuro:#132d45;
     --debajoHeader: #adb8cc3a;
     --azulClaro:#2550f5;
@@ -16,7 +38,7 @@
     --blanco:#f5f5f5;
     --naranja:#f48901;
     --amarilloFuerte:#cee733;
-    --Letra:"Poppins", sans-serif;
+    --Letra:'poppins';
     --Rojo:#ff0000;
 }
 
@@ -29,11 +51,13 @@ a{
     font-size: 1.3rem;
 }
 .Logo  a{
+    font-family: 'logo';
+    font-style: normal;
     font-size: 2rem;
     letter-spacing: .2em;
 }
 .Principal > h2{
-    color: var(--azulMescla);
+    color: var(--azulElectrico);
     font-family: var(--Letra);
     font-size: 2.8rem;
 }
@@ -42,10 +66,14 @@ a{
     font-family: var(--Letra);
     font-size: 2rem;
 }
-.Ofrecemos{
-    font-family: var(--Letra);
-    font-size: 1em;
+
+.containerFooter li > h3{
+    font-family: 'logo';
 }
+.copy > a{
+    font-family: 'final';
+}
+
 /*FIN ESTILOS DE LETRAS, TAMANIOS Y DEMAS DETALLES*/
 
 /*COMIENZO MENU-HEADER*/
@@ -57,8 +85,8 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--negro);
-  border-bottom:2px solid var(--azulClaro) ;
+  background-color: var(--azulCeleste);
+  border-bottom:2px solid var(--azulElectrico) ;
 }
 .Logo{
     border: solid;
@@ -70,8 +98,8 @@ header{
 }
 .Logo:hover{
     border-radius:  10px 0 10px 0 ;
-    color: var(--azulMescla);
-    background-color: var(--azulMescla);
+    color: var(--azulElectrico);
+    background-color: var(--azulElectrico);
 }
 .container{
     min-width: 50%;
@@ -94,7 +122,7 @@ header{
     transition: ease-in-out .3s;
 }
 .olMenu li > a:hover{
-    color:var(--verdeClaro);
+    color:var(--beigeCalido);
 }
 .boton{
     display: none;
@@ -102,7 +130,7 @@ header{
    position: absolute;
    right: .5em;
    top: .5em;
-   fill: var(--verdeClaro);
+   fill: var(--blanco);
 }
 .olMenu{
     display: flex;
@@ -184,7 +212,7 @@ header{
    
 }
 .texto p > span{
-    color: var(--azulMescla);
+    color: var(--azulElectrico);
     transition: ease-in-out .3s;
 }
 .texto p > span:hover{
@@ -199,6 +227,7 @@ header{
     width: 100%;
 }
 #Ofrecemos > h3{
+    font-family: var(--Letra);
     margin: 1em auto;
     padding:1em 0 0 0;
     width: 78%;
@@ -212,6 +241,7 @@ header{
     gap: 1em;
 }
 .container-ventajas > p{
+    font-family: var(--Letra);
     margin: 1em;
     font-size: 1.2em;
 }
@@ -258,13 +288,33 @@ header{
 
 
 footer{
-    margin:0 auto;
-    background-color: var(--azulObscuro);
-    height: 200px;
-}
-.footer{
-    width: 90%;
     margin: auto;
-    text-align: center;
-   
+    background-color: var(--negro);
 }
+.containerFooter{
+    padding: 100px 0 0 0;
+    margin:auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    gap: 15px;
+}
+.containerFooter > li{
+    margin:10px auto;
+   text-align: left;
+    list-style: none;
+}
+.containerFooter li > h3{
+   text-align: left;
+    color: var(--amarilloMostaza);
+}
+.containerFooter li > ol{
+    padding: 10px 0 10px 0;
+}
+.copy{
+    
+    text-align: center;
+    margin: 100px 0 0px 0;
+    padding: 0 0 20px 0;
+}
+
