@@ -89,12 +89,12 @@ header{
   border-bottom:2px solid var(--azulElectrico) ;
 }
 .Logo{
-    border: solid;
-    margin: 0 1em 0 1em;
+    border:5px solid;
+    text-align: center;
     border-radius:0 10px 0 10px ;
     transition: ease .5s;
     color: var(--blanco);
-    padding: 3px;
+   width: clamp(100px, 150px, 200px);
 }
 .Logo:hover{
     border-radius:  10px 0 10px 0 ;
@@ -189,14 +189,14 @@ header{
 
 /*COMIENZO MAIN*/
 .Principal{
-    padding: 7em 0 2em 0;
+    padding: 10em 0 2em 0;
     text-align: center;
     background-color: var(--debajoHeader);
 }
 .Principal > h2{
-    margin: 1em 0 0 0;
     width: 100%;
     margin: auto;
+    font-size: 2.8rem;
 }
 
 .texto{
@@ -250,18 +250,15 @@ header{
 }
 
 #contacto{
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: co;
-   background: linear-gradient(to top, var(--azulObscuro) 10%, #edecec 80%);
+   background-color: var(--debajoHeader);
 }
 
 #contacto > h3{
     padding: 1em 0 0 0;
     text-align: center;
     font-family: var(--Letra);
-    color: var(--azulMescla);
-    font-size: 1.5em;
+    color: var(--azulCeleste);
+    font-size: 2rem;
 }
 #contacto > div{
   display: flex;
@@ -278,13 +275,35 @@ header{
     backdrop-filter: blur(10px);
     margin: 1em auto;
     box-shadow: 0 5px 5px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #contacto div > button:hover{
     transform: scale(1.01);
     box-shadow: 5px 7px 5px rgb(0, 0, 0);
-    background: linear-gradient(to right, var(--verde) 0%, var(--verdeClaro) 50%);
+    background-color: #adadad44;
 }
-
+#contacto div button > a{
+    color: var(--negro);
+}
+#contacto div button > svg{
+    margin: 0 10px 0 0;
+    width: 30px; height: auto;
+    
+}
+#wsp{
+    fill: var(--verde); 
+}
+#mail{
+    fill: var(--grisClaro); 
+}
+#telegram{
+fill: var(--azulElectrico);
+}
+#insta{
+    fill: #d22271b6;
+}
 
 
 footer{
@@ -299,22 +318,37 @@ footer{
     grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
     gap: 15px;
 }
-.containerFooter > li{
+.containerFooter > ol{
     margin:10px auto;
    text-align: left;
     list-style: none;
 }
-.containerFooter li > h3{
+.containerFooter ol > h3{
    text-align: left;
-    color: var(--amarilloMostaza);
+    color: var(--beigeCalido);
 }
-.containerFooter li > ol{
+.containerFooter ol > li{
+    transform-origin: center;
+    transition: transform ease-in-out .3s;
     padding: 10px 0 10px 0;
 }
+.containerFooter ol > li:hover{
+    transform: scale(1.1);
+    transform-origin: center;
+}
+.containerFooter ol li > a:hover{
+    color: var(--amarilloMostaza);
+    transition: ease-in-out .3s;
+}
 .copy{
-    
     text-align: center;
-    margin: 100px 0 0px 0;
+    margin: 50px 0 0px 0;
     padding: 0 0 20px 0;
 }
-
+.copy a{
+    transition: ease .2s; 
+}
+.copy a:hover{
+    color:var(--Rojo);
+    transition: ease .2s;
+}
