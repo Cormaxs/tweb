@@ -32,6 +32,7 @@
     --azulObscuro:#132d45;
     --debajoHeader: #adb8cc3a;
     --azulClaro:#2550f5;
+    --contacto:#51c1f1;
     --azulMescla:#484e91;
     --grisClaro:#696e79;
     --grisObscuro:#232536;
@@ -198,7 +199,7 @@ header{
 }
 
 .texto{
-    width: 80%; max-width: 800px;
+    width: 95%; max-width: 800px;
     margin: 2em auto;
     border-radius: 10px;
 }
@@ -222,7 +223,7 @@ header{
 /*CARACTERISTICAS*/
 #Ofrecemos{
     margin: 5em auto;
-    width: 100%;
+    width: 100%; 
 }
 #Ofrecemos > h3{
     font-family: var(--Letra);
@@ -257,12 +258,13 @@ header{
     padding: 1em 0 0 0;
     text-align: center;
     font-family: var(--Letra);
-    color: var(--azulCeleste);
+    color: var(--contacto);
     font-size: 2rem;
 }
 #contacto > div{
+    margin: auto;
+    width: 90%; max-width: 900px;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 1em 0 5em 0;
 }
