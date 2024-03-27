@@ -8,11 +8,11 @@
     src: url("LETRAS/Sharpie_Complete-LOGO/Fonts/Variable/Sharpie-Variable.ttf");
 }
 @font-face {
-    font-family: 'poppins';
-    src: url("LETRAS/Poppins_Complete/Fonts/Variable/Poppins-Variable.ttf");
+    font-family: "poppins";
+    src: url("LETRAS/Poppins_Complete/Variable/Poppins-Variable.ttf");
 }
 @font-face {
-    font-family: 'final';
+    font-family: "final";
     src: url("LETRAS/Kalam_Complete/Fonts/Variable/Kalam-Variable.ttf");
 }
 :root{
@@ -38,7 +38,7 @@
     --blanco:#f5f5f5;
     --naranja:#f48901;
     --amarilloFuerte:#cee733;
-    --Letra:'poppins';
+    --Letra:"poppins";
     --Rojo:#ff0000;
 }
 
@@ -67,11 +67,8 @@ a{
     font-size: 2rem;
 }
 
-.containerFooter li > h3{
-    font-family: 'logo';
-}
 .copy > a{
-    font-family: 'final';
+    font-family: "final";
 }
 
 /*FIN ESTILOS DE LETRAS, TAMANIOS Y DEMAS DETALLES*/
@@ -187,6 +184,7 @@ header{
 }
 /*FIN MENU-HEADER*/
 
+
 /*COMIENZO MAIN*/
 .Principal{
     padding: 10em 0 2em 0;
@@ -249,6 +247,8 @@ header{
   fill: var(--verde);
 }
 
+
+/*CONTACT ME*/
 #contacto{
    background-color: var(--debajoHeader);
 }
@@ -305,7 +305,7 @@ fill: var(--azulElectrico);
     fill: #d22271b6;
 }
 
-
+/*TODO FOOTER*/
 footer{
     margin: auto;
     background-color: var(--negro);
@@ -323,10 +323,7 @@ footer{
    text-align: left;
     list-style: none;
 }
-.containerFooter ol > h3{
-   text-align: left;
-    color: var(--beigeCalido);
-}
+
 .containerFooter ol > li{
     transform-origin: center;
     transition: transform ease-in-out .3s;
@@ -335,6 +332,18 @@ footer{
 .containerFooter ol > li:hover{
     transform: scale(1.1);
     transform-origin: center;
+}
+#titulito{
+    transform:none;
+}
+#titulito > span{
+    font-family: 'logo';
+    font-size: 1.5rem;
+   text-align: left;
+    color: var(--beigeCalido);
+}
+.containerFooter ol li > a{
+    font-family: "final";
 }
 .containerFooter ol li > a:hover{
     color: var(--amarilloMostaza);
