@@ -42,6 +42,11 @@
     --amarilloFuerte:#cee733;
     --Letra:"poppins";
     --Rojo:#ff0000;
+    --amarilloInvincible:#ffe556;
+    --celesteInvincible:#00bcf0;
+    --negroInvincible:	#303539;
+    --BlamcoInvincible: #e1ebed;
+
 }
 
 
@@ -53,6 +58,7 @@ a{
     font-size: 1.3rem;
 }
 .Logo  a{
+    color: var(--amarilloInvincible);
     font-family: 'logo';
     font-style: normal;
     font-size: 2rem;
@@ -67,6 +73,20 @@ a{
     color: var(--negro);
     font-family: var(--Letra);
     font-size: 2rem;
+}
+.tarjeta > h3{
+    font-family: var(--Letra);
+    font-size: 1em;
+}
+.tarjeta > p{
+    font-family: var(--Letra);
+    font-size: 0.99rem;
+    
+    padding-left: 5px;
+}
+.tarjeta > a{
+    font-family: var(--Letra);
+    font-size: 1em;
 }
 
 .copy > a{
@@ -84,7 +104,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--azulCeleste);
+  background-color: var(--celesteInvincible);
   border-bottom:2px solid var(--azulElectrico) ;
 }
 .Logo{
@@ -121,7 +141,7 @@ header{
     transition: ease-in-out .3s;
 }
 .olMenu li > a:hover{
-    color:var(--beigeCalido);
+    color:var(--amarilloInvincible);
 }
 .boton{
     display: none;
@@ -171,7 +191,7 @@ header{
         text-align: center;
         align-items: center;
         padding: 5em 0 10px 0;
-        background-color: var(--negro);
+        background-color: var(--negroInvincible);
         border-radius: 10px 0 0 10px; 
     }
     .activo{
@@ -182,6 +202,9 @@ header{
     }
     .olMenu li > a{
         text-decoration: none;
+    }
+    .tarjeta{
+        max-width:318px;
     }
 }
 /*FIN MENU-HEADER*/
@@ -212,14 +235,52 @@ header{
    
 }
 .texto p > span{
-    color: var(--azulElectrico);
+    color: var(--celesteInvincible);
     transition: ease-in-out .3s;
 }
 .texto p > span:hover{
-    color: var(--azulClaro);
+    color: var(--azulElectrico);
 }
-
-
+#tarjetasSection{
+    padding: 1em 0 1em;
+}
+.tarjetas{
+    width: 95%; max-width: 1200px;
+    margin: auto;
+    display:flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta{
+    text-align: center;
+    width:358px; height: 440px;
+    background-color:#ffffff;
+    border-radius: 16px; padding: 24px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.179);
+}
+.tarjeta > img{
+    width: 100px; height: 100px;
+    object-fit: contain;
+    margin: 0 0 1em 0;
+    background-color:var(--BlamcoInvincible);
+   border-radius: 10px;
+   padding: 5px;
+}
+.tarjeta > h3{
+    margin: 0 0 1em 0;
+    font-size: 1.5em;
+}
+.tarjeta > p{
+    text-align: left;
+    margin: 0 0 1em 0;
+    max-height: 167px;
+    min-height: 167px;
+    overflow: hidden;
+}
+.tarjeta > a{
+    color: var(--celesteInvincible);
+}
 
 /*CARACTERISTICAS*/
 #Ofrecemos{
@@ -312,7 +373,7 @@ fill: var(--azulElectrico);
 /*TODO FOOTER*/
 footer{
     margin: auto;
-    background-color: var(--negro);
+    background-color: var(--negroInvincible);
 }
 .containerFooter{
     padding: 100px 0 0 0;
@@ -344,13 +405,13 @@ footer{
     font-family: 'logo';
     font-size: 1.5rem;
    text-align: left;
-    color: var(--beigeCalido);
+    color: var(--amarilloInvincible);
 }
 .containerFooter ol li > a{
     font-family: "final";
 }
 .containerFooter ol li > a:hover{
-    color: var(--amarilloMostaza);
+    color: var(--amarilloInvincible);
     transition: ease-in-out .3s;
 }
 .copy{
@@ -362,6 +423,6 @@ footer{
     transition: ease .2s; 
 }
 .copy a:hover{
-    color:var(--Rojo);
+    color:var(--celesteInvincible);
     transition: ease .2s;
 }
