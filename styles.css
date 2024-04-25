@@ -210,6 +210,15 @@ header{
     .tarjeta{
         max-width:318px;
     }
+    .selectImg  > a {
+        min-width: 95%; 
+  
+    }
+    .container-planes{
+        width: 85%;
+    }
+
+
 }
 /*FIN MENU-HEADER*/
 
@@ -299,6 +308,38 @@ header{
     color: var(--celesteInvincible);
 }
 
+/*seleccionPagina*/
+.seleccionPagina{
+    padding: 1rem 0 2rem 0;
+    width: 100%; 
+    background-color: var(--blanco);
+    text-align: center;
+}
+.selectDentro > h3{
+    margin: auto;
+    width: 95%;
+    font-family: var(--Letra);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.selectImg{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.selectImg  > a {
+    width: 50%; max-width: 550px;
+    height: auto; 
+    overflow: hidden;  
+}
+.selectImg  a > img{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%; height: auto;
+}
+
 
 /*CARACTERISTICAS*/
 #Ofrecemos{
@@ -338,6 +379,73 @@ header{
 .cardProyectos{
     border: solid red;
 }
+/*PLANES*/
+.planes{
+    width: 100%;
+}
+.planes > h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: var(--Letra);
+    font-weight: 600;
+}
+.container-planes{
+padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+}
+.container-planes > div{
+    background-color: var(--blanco);
+    padding: 2rem 1rem 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.179);
+}
+.container-planes > div:hover{
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.517);
+}
+
+.container-planes > div h3{
+    margin: 2rem 0 1rem 0;
+    font-family: var(--Letra);
+    font-size: 1.1rem;
+}
+.container-planes > div span{
+    font-family: var(--Letra);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.container-planes > div ol{
+    list-style: none;
+    padding: 0 1rem 0 1rem;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+}
+.container-planes > div li{
+    margin: 20px 0 30px 0;
+}
+.container-planes > div p{
+    font-family: var(--Letra);
+    font-size: 1rem;
+}
+.container-planes > div button{
+    border: none;
+    cursor: pointer;
+    width: 50%; max-width: 200px;
+    border-radius: 28px;
+    padding: 12px;
+    font-family: var(--Letra);
+    font-size: 1.3rem;
+    color: var(--BlamcoInvincible);
+    background-color: var(--azulObscuro);
+    box-shadow: 0px 1px 8px rgba(117, 117, 117, 0.631);
+}
+
+
 
 /*CONTACT ME*/
 #contacto{
