@@ -280,12 +280,13 @@ header{
     transform: translatey(-10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.282);
 }
-.tarjeta > svg{
+.img-svg{
     margin: 0 0 0 50px;
     width: 50px; height: 50px;
-    background-color:var(--contacto);
+    background-color:var(--BlamcoInvincible);
    border-radius: 10px;
    padding: 5px;
+   fill:  var(--azulElectrico);
 }
 .tarjeta > h3{
     margin: auto;
@@ -320,23 +321,31 @@ padding: 2rem 0 2rem 0;
     justify-content: center;
     gap: 2rem;
     margin: auto;
+   
+    
 }
 .container-planes > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px; max-height: 900px;
     background-color: var(--blanco);
     padding: 2rem 1rem 3rem 1rem;
     text-align: center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.179);
+
 }
 .container-planes > div:hover{
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.517);
 }
 
 .container-planes > div h3{
+    width: 100%;
     margin: 2rem 0 1rem 0;
     font-family: var(--Letra);
     font-size: 1.1rem;
 }
 .container-planes > div span{
+    width: 100%;
     font-family: var(--Letra);
     font-size: 3rem;
     font-weight: 600;
@@ -346,8 +355,14 @@ padding: 2rem 0 2rem 0;
     list-style: none;
     padding: 0 1rem 0 1rem;
     width: 95%;
-    margin: auto;
     text-align: left;
+}
+.container-planes > div p::before{
+    content: '\2713  ';
+    color: rgb(255, 255, 255);
+    margin: 0 10px 0 0;
+    background-color: #01c38d; padding: 5px;
+    border-radius: 50%;
 }
 .container-planes > div li{
     margin: 20px 0 30px 0;
@@ -356,17 +371,27 @@ padding: 2rem 0 2rem 0;
     font-family: var(--Letra);
     font-size: 1rem;
 }
+.container-planes > div a{
+    width: 130px;
+    margin: auto;
+   
+}
 .container-planes > div button{
     border: none;
     cursor: pointer;
-    width: 50%; max-width: 200px;
-    border-radius: 28px;
+    width: 100%; max-width: 200px;
+    border-radius: 17px;
     padding: 12px;
     font-family: var(--Letra);
     font-size: 1.3rem;
     color: var(--BlamcoInvincible);
-    background-color: var(--azulObscuro);
-    box-shadow: 0px 1px 8px rgba(117, 117, 117, 0.631);
+    background-color: var(--verde);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.41);
+    transition: all .3s;
+}
+.container-planes > div button:hover{
+    transform: scale(1.01);
+     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.447);
 }
 
 .servicios{
