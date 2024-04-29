@@ -59,14 +59,14 @@ a{
     font-size: 1.3rem;
 }
 .Logo  a{
-    color: var(--amarilloInvincible);
-    font-family: 'logo';
+   
+    font-family: var(--Letra);
     font-style: normal;
     font-size: 2rem;
     letter-spacing: .2em;
 }
 .Principal .texto > h2{
-    color: var(--blanco);
+    color: var(--azulObscuro);
     font-family: var(--Letra);
     font-size: 2rem;
     padding: 1rem 0 0 0;
@@ -110,21 +110,18 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--celesteInvincible);
+  background-color: var(--azulCeleste);
 }
 .Logo{
-    border:5px solid;
     text-align: center;
     border-radius:0 10px 0 10px ;
     transition: ease .5s;
     color: var(--blanco);
    width: clamp(100px, 150px, 200px);
 }
-.Logo:hover{
-    border-radius:  10px 0 10px 0 ;
-    color: var(--azulElectrico);
-    background-color: var(--azulElectrico);
-}
+.Logo > a:hover{
+    color: var(--amarilloInvincible);
+ }
 .container{
     min-width: 50%;
     display:flex;
@@ -225,28 +222,12 @@ header{
 
 /*COMIENZO MAIN*/
 .Principal{
-    height: 100px;
-    text-align: center;
-    background-color: var(--celesteInvincible);
-    text-align: center;
+    height: 50px;
+   padding: 0 0 80px 0;
 }
 
 
-.texto{
-    margin: auto;
-    width: 80%; max-width: 800px;
-    border-radius: 10px;
-}
 
-.texto > p{
-    padding: 10px 10px 1em 10px;
-    font-size: 1.3rem;
-   
-}
-.texto p > span{
-    color: var(--amarilloInvincible);
-    transition: ease-in-out .3s;
-}
 #tarjetasSection{
     padding: 1em 0 1em;
 }
@@ -310,6 +291,8 @@ header{
     width: 100%;
 }
 .planes > h3{
+    margin: auto;
+    width: 95%;
     text-align: center;
     font-size: 1.8rem;
     font-family: var(--Letra);
@@ -534,7 +517,7 @@ text-align: start;
  }
 
 /*sublista de servicios*/
- .dropdown {
+.dropdown {
     position: relative; /* Enable positioning for the sublist */
   }
   
@@ -543,7 +526,7 @@ text-align: start;
     top: 100%; /* Place the sublist below the parent */
     left: 0; /* Align the sublist to the left edge of the parent */
     display: none; /* Hide the sublist by default */
-    background-color: var(--celesteInvincible) ;/* Set a background color */
+    background-color: var(--azulCeleste) ;/* Set a background color */
     padding: 10px; /* Add padding for spacing */
     border: none;
     border-radius: 4px; /* Add rounded corners */
