@@ -225,7 +225,7 @@ header{
 
 /*COMIENZO MAIN*/
 .Principal{
-    padding: 10em 0 2em 0;
+    height: 100px;
     text-align: center;
     background-color: var(--celesteInvincible);
     text-align: center;
@@ -281,7 +281,7 @@ header{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.282);
 }
 .img-svg{
-    margin: 0 0 0 50px;
+   
     width: 50px; height: 50px;
     background-color:var(--BlamcoInvincible);
    border-radius: 10px;
@@ -289,7 +289,8 @@ header{
    fill:  var(--azulElectrico);
 }
 .tarjeta > h3{
-    margin: auto;
+   
+    margin:auto;
     font-size: 1.3em;
 }
 .tarjeta > p{
@@ -327,7 +328,7 @@ padding: 2rem 0 2rem 0;
 .container-planes > div{
     display: flex;
     flex-wrap: wrap;
-    width: 550px; max-height: 900px;
+    width: 550px; 
     background-color: var(--blanco);
     padding: 2rem 1rem 3rem 1rem;
     text-align: center;
@@ -342,7 +343,7 @@ padding: 2rem 0 2rem 0;
     width: 100%;
     margin: 2rem 0 1rem 0;
     font-family: var(--Letra);
-    font-size: 1.1rem;
+    color: var(--azulElectrico);
 }
 .container-planes > div span{
     width: 100%;
@@ -361,8 +362,10 @@ padding: 2rem 0 2rem 0;
     content: '\2713  ';
     color: rgb(255, 255, 255);
     margin: 0 10px 0 0;
-    background-color: #01c38d; padding: 5px;
-    border-radius: 50%;
+    background-color: #01c38d; 
+    padding: 0 0px 0 5px;
+    border-radius: 5px;
+   
 }
 .container-planes > div li{
     margin: 20px 0 30px 0;
@@ -397,6 +400,16 @@ padding: 2rem 0 2rem 0;
 .servicios{
     margin: 2em auto;
     text-align: center;
+    font-family: var(--Letra);
+}
+
+.servicios > h4{
+    font-size: 1.8em ; 
+}
+.servicios > p{
+width: 90%;
+margin: 1.3em auto;
+text-align: start;
 }
 
 

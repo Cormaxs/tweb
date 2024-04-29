@@ -226,7 +226,7 @@ header{
 
 /*COMIENZO MAIN*/
 .Principal{
-    padding: 10em 0 2em 0;
+    padding: 7.5em 0 2em 0;
     text-align: center;
     background-color: var(--celesteInvincible);
     display: flex;
@@ -238,8 +238,9 @@ header{
 
 .texto{
     width: 80%; max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px var(--azulClaro);
+    border-radius: 10px ;
+    box-shadow: 5px 5px 5px var(--azulMescla);
+    
 }
 
 .texto > p{
