@@ -532,3 +532,26 @@ text-align: start;
      color:var(--celesteInvincible);
      transition: ease .2s;
  }
+
+/*sublista de servicios*/
+ .dropdown {
+    position: relative; /* Enable positioning for the sublist */
+  }
+  
+  .dropdown .sublist {
+    position: absolute; /* Make the sublist position relative to its parent */
+    top: 100%; /* Place the sublist below the parent */
+    left: 0; /* Align the sublist to the left edge of the parent */
+    display: none; /* Hide the sublist by default */
+    background-color: var(--celesteInvincible) ;/* Set a background color */
+    padding: 10px; /* Add padding for spacing */
+    border: none;
+    border-radius: 4px; /* Add rounded corners */
+    list-style: none;
+    z-index: 1; /* Ensure the sublist is above other elements */
+  }
+  
+  .dropdown:hover .sublist {
+    display: block; /* Show the sublist on hover */
+  }
+  

@@ -284,13 +284,16 @@ header{
     transform: translatey(-10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.282);
 }
-.tarjeta > img{
+.tarjeta > svg{
     width: 100px; height: 100px;
     object-fit: contain;
     margin: 0 0 1em 0;
     background-color:var(--BlamcoInvincible);
    border-radius: 10px;
-   padding: 5px;
+   padding: 10px;
+}
+.tarjeta > svg path{
+    fill: var(--letrasNegro);
 }
 .tarjeta > h3{
     margin: 0 0 1em 0;
@@ -304,7 +307,7 @@ header{
     overflow: hidden;
 }
 .tarjeta > a{
-    color: var(--naranja);
+    color: var(--azulElectrico);
 }
 
 /*seleccionPagina*/
@@ -561,3 +564,26 @@ footer{
     color:var(--celesteInvincible);
     transition: ease .2s;
 }
+
+
+/*sublista de servicios*/
+.dropdown {
+    position: relative; /* Enable positioning for the sublist */
+  }
+  
+  .dropdown .sublist {
+    position: absolute; /* Make the sublist position relative to its parent */
+    top: 100%; /* Place the sublist below the parent */
+    left: 0; /* Align the sublist to the left edge of the parent */
+    display: none; /* Hide the sublist by default */
+    background-color: var(--celesteInvincible) ;/* Set a background color */
+    padding: 10px; /* Add padding for spacing */
+    border: none;
+    border-radius: 4px; /* Add rounded corners */
+    list-style: none;
+    z-index: 1; /* Ensure the sublist is above other elements */
+  }
+  
+  .dropdown:hover .sublist {
+    display: block; /* Show the sublist on hover */
+  }
