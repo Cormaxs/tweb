@@ -260,7 +260,7 @@ header{
 }
 #tarjetasSection > h3{
     text-align: center;
-    margin: 50px 0 100px 0;
+    margin: 20px 0 50px 0;
     font-size: 1.5rem;
     font-family: var(--Letra);
     color: var(--negroInvincible);
@@ -296,7 +296,7 @@ header{
    padding: 10px;
 }
 .tarjeta > svg path{
-    fill: var(--letrasNegro);
+    fill: var(--azulMescla);
 }
 .tarjeta > h3{
     margin: 0 0 1em 0;
