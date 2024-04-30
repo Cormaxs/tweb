@@ -47,6 +47,8 @@
     --negroInvincible:	#303539;
     --BlamcoInvincible: #e1ebed;
     --letrasNegro:#3e3e3e;
+    --LetrasTexto:#8198ae;
+    --letrasTitulos:#1f4568;
 
 }
 
@@ -56,7 +58,7 @@ a{
     text-decoration: none;
     color: var(--blanco);
     font-family: var(--Letra);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .Logo  a{
    
@@ -72,7 +74,7 @@ a{
     padding: 1rem 0 0 0;
 }
 .texto{
-    color: var(--negro);
+    color: var(--LetrasTexto);
     font-family: var(--Letra);
     font-size: 2rem;
 }
@@ -105,12 +107,13 @@ a{
 header{
     z-index: 1;
     position: fixed;
-    width: 100%;
-    padding: 10px 0 10px 0;
+    width: 100%; height: 59px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--azulCeleste);
+  background-color:#2195f3cc ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
 }
 .Logo{
     text-align: center;
@@ -147,10 +150,10 @@ header{
 }
 .boton{
     display: none;
-   width: 50px; height: 50px;
+   width: 44px; height: 34px;
    position: absolute;
-   right: .5em;
-   top: .5em;
+   right: .6em;
+   top: 1.2em;
    fill: var(--blanco);
 }
 .olMenu{
@@ -526,7 +529,6 @@ text-align: start;
     top: 100%; /* Place the sublist below the parent */
     left: 0; /* Align the sublist to the left edge of the parent */
     display: none; /* Hide the sublist by default */
-    background-color: var(--azulCeleste) ;/* Set a background color */
     padding: 10px; /* Add padding for spacing */
     border: none;
     border-radius: 4px; /* Add rounded corners */
@@ -535,6 +537,13 @@ text-align: start;
   }
   
   .dropdown:hover .sublist {
+    background-color: #2195f3c0;
     display: block; /* Show the sublist on hover */
   }
   
+  .dropdown .sublist > li a{
+    color:var(--blanco);
+  }
+  .dropdown .sublist > li a:hover{
+    color: var(--amarilloInvincible);
+  }
