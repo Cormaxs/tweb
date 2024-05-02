@@ -1,13 +1,13 @@
-const boton = document.querySelector(".boton");
-const olMenu = document.querySelector(".olMenu");
-const Menu = document.querySelector(".menu");
+const dropdown = document.querySelector('.dropdown');
+const sublist = document.querySelector('.sublist');
+const aparece = document.querySelector('.aparece');
+const ulMain = document.querySelector('.ul-main');
 
+dropdown.addEventListener('click', () => {
+  sublist.classList.toggle('hover');
+});
 
-boton.addEventListener("click", function(){
-    olMenu.classList.toggle("activo");
-    Menu.classList.toggle("activo");
-    
-})
-
-
+aparece.addEventListener("click", () =>{
+ulMain.classList.toggle('seve');
+});
 

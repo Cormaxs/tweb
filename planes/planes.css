@@ -60,13 +60,6 @@ a{
     font-family: var(--Letra);
     font-size: 1rem;
 }
-.Logo  a{
-   
-    font-family: var(--Letra);
-    font-style: normal;
-    font-size: 2rem;
-    letter-spacing: .2em;
-}
 .Principal .texto > h2{
     color: var(--azulObscuro);
     font-family: var(--Letra);
@@ -101,113 +94,8 @@ a{
     font-family: "final";
 }
 
-/*FIN ESTILOS DE LETRAS, TAMANIOS Y DEMAS DETALLES*/
-
-/*COMIENZO MENU-HEADER*/
-header{
-    z-index: 1;
-    position: fixed;
-    width: 100%; height: 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:#2195f3cc ;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(10px);
-}
-.Logo{
-    text-align: center;
-    border-radius:0 10px 0 10px ;
-    transition: ease .5s;
-    color: var(--blanco);
-   width: clamp(100px, 150px, 200px);
-}
-.Logo > a:hover{
-    color: var(--amarilloInvincible);
- }
-.container{
-    min-width: 50%;
-    display:flex;
-}
-.menu{
-    display: grid;
-    grid-template-columns: repeat(1,minmax(500px, 100%));
-    grid-template-rows: repeat(1, 50px);
-    width: 100%;
-    align-items: center;
-    padding: 0 1em 0 1em;
-    
-}
-.olMenu{
-    list-style: none;
-    justify-content: flex-end;
-}
-.olMenu li > a{
-    transition: ease-in-out .3s;
-}
-.olMenu li > a:hover{
-    color:var(--amarilloInvincible);
-}
-.boton{
-    display: none;
-   width: 44px; height: 34px;
-   position: absolute;
-   right: .6em;
-   top: 1.2em;
-   fill: var(--blanco);
-}
-.olMenu{
-    display: flex;
-    justify-content: space-around;
-}
-
-@media (max-width:700px){
-    header{
-        justify-content: flex-end;
-    }
-    .boton{
-        display: block;
-        cursor: pointer;
-    }
-    .container{
-        height: 80px;
-        position: relative; 
-    }
-    .menu{
-        position: absolute;
-        overflow: hidden;
-        display: grid;
-        height: 800px;
-       background-color: transparent;
-       display:none;
-       
-    }
-    .olMenu{
-        position: absolute;
-        width: 100%;
-        height: 700px;
-        top: 6em;
-        transform: translateX(35em);
-        transition: transform ease-in-out .5s;
-        display: grid;  
-        grid-template-columns: 200px;
-        grid-template-rows: repeat(auto-fill, 50px);
-        row-gap: 2em;
-        text-align: center;
-        align-items: center;
-        padding: 5em 0 10px 0;
-        background-color: var(--negroInvincible);
-        border-radius: 10px 0 0 10px; 
-    }
-    .activo{
-        
-        transform: translateX(0em);
-        transition: transform ease-in-out .5s;
-        display: grid;
-    }
-    .olMenu li > a{
-        text-decoration: none;
-    }
+/*FIN ESTILOS DE LETRAS, TAMANIOS Y DEMAS DETALLES*/@media screen and (max-width:991px){
+   
     .tarjeta{
         max-width:318px;
     }
@@ -218,8 +106,6 @@ header{
     .container-planes{
         width: 85%;
     }
-
-
 }
 /*FIN MENU-HEADER*/
 
@@ -393,7 +279,7 @@ padding: 2rem 0 2rem 0;
     font-size: 1.8em ; 
 }
 .servicios > p{
-width: 90%;
+width: 90%; max-width: 800px;
 margin: 1.3em auto;
 text-align: start;
 }
@@ -519,31 +405,10 @@ text-align: start;
      transition: ease .2s;
  }
 
-/*sublista de servicios*/
-.dropdown {
-    position: relative; /* Enable positioning for the sublist */
-  }
-  
-  .dropdown .sublist {
-    position: absolute; /* Make the sublist position relative to its parent */
-    top: 100%; /* Place the sublist below the parent */
-    left: 0; /* Align the sublist to the left edge of the parent */
-    display: none; /* Hide the sublist by default */
-    padding: 10px; /* Add padding for spacing */
-    border: none;
-    border-radius: 4px; /* Add rounded corners */
-    list-style: none;
-    z-index: 1; /* Ensure the sublist is above other elements */
-  }
-  
-  .dropdown:hover .sublist {
-    background-color: #2195f3c0;
-    display: block; /* Show the sublist on hover */
-  }
-  
-  .dropdown .sublist > li a{
-    color:var(--blanco);
-  }
-  .dropdown .sublist > li a:hover{
-    color: var(--amarilloInvincible);
-  }
+@media screen and (max-width:991px){
+    .servicios > p{
+        padding: 0 0 0 10px;
+        margin: 1.3em auto;
+        text-align: start;
+        }
+}
