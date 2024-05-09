@@ -102,7 +102,7 @@ a{
 
 
 
-@media screen and (max-width:991px){
+@media screen and (max-width:750px){
    
     .tarjeta{
         max-width:318px;
@@ -114,6 +114,9 @@ a{
     .container-planes{
         width: 85%;
     }
+    .Principal{
+        flex-wrap: wrap;
+    }
 }
 /*FIN MENU-HEADER*/
 
@@ -124,14 +127,15 @@ a{
     text-align: center;
     background-color: #eeeeee;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 2em;
 }
 
 
 .texto{
-    background-color: #ffffff;
+    border: solid;
+    flex-wrap: wrap;
     width: 95%; max-width: 550px;
     border-radius: 10px ;
     padding: 0 20px 0 20px;
@@ -189,7 +193,7 @@ a{
    padding: 10px;
 }
 .tarjeta > svg path{
-    fill: var(--azulMescla);
+    fill: var(--azulElectrico);
 }
 .tarjeta > h3{
     margin: 0 0 1em 0;
