@@ -11,3 +11,13 @@ aparece.addEventListener("click", () =>{
 ulMain.classList.toggle('seve');
 });
 
+
+
+
+
+//animaciones
+
+
+
+
+
