@@ -138,7 +138,7 @@ a{
 }
 .tarjeta{
     text-align: center;
-    width:400px; height: 200px;
+    width:420px; height: 200px;
     background-color:#ffffff;
     border-radius: 16px; padding: 24px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.179);
@@ -463,4 +463,10 @@ text-align: start;
         margin: 1.3em auto;
         text-align: start;
         }
+}
+
+@media screen and (max-width:650px) {
+    .tarjeta{
+        width: 100%; max-width: 1000px;
+    }
 }
