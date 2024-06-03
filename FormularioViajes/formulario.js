@@ -39,17 +39,17 @@ function verificarFecha(origin, destination,date){
 
   // empezar validacion
   if (year < año) {
-    alert('solo se permite desde el año, mes y dia actual en adelante')
+    alert('solo se permite buscar una fecha desde el año, mes y dia actual en adelante')
     return false; // Año del calendario es anterior al año actual
   } else if (year === año) {
     // Si los años son iguales, validar mes
     if (month < mes) {
-      alert('solo se permite desde el año, mes y dia actual en adelante');
+      alert('solo se permite buscar una fecha desde el año, mes y dia actual en adelante');
       return false; // Mes del calendario es anterior al mes actual
     } else if (month === mes) {
       // Si los meses son iguales, validar día
       if (day < dia) {
-        alert('solo se permite desde el año, mes y dia actual en adelante');
+        alert('solo se permite buscar una fecha desde el año, mes y dia actual en adelante');
         return false; // Día del calendario es anterior al día actual
       }
     }
