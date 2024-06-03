@@ -17,7 +17,7 @@ travelForm.addEventListener('submit', function(event) {
     return console.log(" Origen del viaje: ", capturaDatos.origin,"\n Destino del viaje: ", capturaDatos.destination , "\n Fecha del viaje: ", capturaDatos.date);
     }else{return false;}
   } else {
-    return alert('Asegurese de no selecionar el mismo origen y destino y las fechas disponibles');
+    return alert('Asegurese de no selecionar el mismo origen y destino');
   }
 });
 
@@ -39,14 +39,17 @@ function verificarFecha(origin, destination,date){
 
   // empezar validacion
   if (year < año) {
+    alert('solo se permite desde el año, mes y dia actual en adelante')
     return false; // Año del calendario es anterior al año actual
   } else if (year === año) {
     // Si los años son iguales, validar mes
     if (month < mes) {
+      alert('solo se permite desde el año, mes y dia actual en adelante');
       return false; // Mes del calendario es anterior al mes actual
     } else if (month === mes) {
       // Si los meses son iguales, validar día
       if (day < dia) {
+        alert('solo se permite desde el año, mes y dia actual en adelante');
         return false; // Día del calendario es anterior al día actual
       }
     }
