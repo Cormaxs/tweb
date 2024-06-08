@@ -5,8 +5,8 @@ const pantalla = document.querySelector('.pantalla');
 const informacion = document.querySelector('.informacion');
 const pokeName = document.getElementById('pokemon');
 
-
-listaPokemon.addEventListener('click', () => {
+/*
+ listaPokemon.addEventListener('click', () => {
     if(pokeName.value !== ''){
         for(let i = 1; i<= 151; i++){
             fetch(URL + i)
@@ -19,6 +19,34 @@ listaPokemon.addEventListener('click', () => {
     
     
 })
+*/
+
+async function buscarPokemon(){
+    try {
+        if(pokeName.value !== ''){
+        //await console.log("no error");
+        for(let i = 1; i<= 151; i++){
+            await fetch(URL + i)
+                .then((response) => response.json())
+                .then(data => {
+                    if(pokeName.value == data.name){
+                    console.log("Elpokemon es: ", data);
+                    Mostrar(data);
+                    i = 151;
+                    return i;
+                }else{
+                   // console.log("pokemon no encontrado");
+                    return false;
+                }
+            })
+                
+        }
+    }
+    }
+    catch{
+        alert("Pokemon no encontrado");
+    }
+}
 
 function Mostrar(pokemon) {
     // Create the image element
@@ -52,7 +80,7 @@ function Mostrar(pokemon) {
   informacion.append(div);
   }
   
-
+/*
 function verificaPokemon(data){
     if(pokeName.value == data.name){
         console.log("Elpokemon es: ", data);
@@ -64,4 +92,4 @@ function verificaPokemon(data){
         return false;
     }
 
-}
+} */

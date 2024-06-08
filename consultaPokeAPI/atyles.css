@@ -43,6 +43,7 @@
 }
 .infoText > p{
     margin: 2rem 0;
+    color: rgb(0, 255, 42);
 }
 
 form{
