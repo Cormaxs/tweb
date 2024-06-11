@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf') format('ttf');
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+/*estilos de letras*/
+
+
+p{
+    font-family: 'poppins';
+    font-weight: 400;
+    letter-spacing: .03rem;
+}
+a{
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: var(--letras);
+    
+}
+footer a{
+    text-decoration: none;
+    color: var(--letrasBlancas);
+}
+
+h1 {
+    font-size: 2.5em; /* Aproximadamente 40px */
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-size: 2em; /* Aproximadamente 32px */
+    letter-spacing: 0.04em;
+}
+
+h3 {
+    font-size: 1.75em; /* Aproximadamente 28px */
+    letter-spacing: 0.03em;
+}
+
+h4 {
+    font-size: 1.5em; /* Aproximadamente 24px */
+    letter-spacing: 0.02em;
+}
+
+h5{
+    font-size: 1.25em; /* Aproximadamente 20px */
+    letter-spacing: 0.01em;
+}
+p,footer a{
+    font-size: 1em; /* Aproximadamente 16px para escritorio */
+}
+
+
+/*tablets*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Aproximadamente 32px */
+        letter-spacing: 0.04em;
+    }
+
+    h2 {
+        font-size: 1.75em; /* Aproximadamente 28px */
+        letter-spacing: 0.035em;
+    }
+
+    h3 {
+        font-size: 1.5em; /* Aproximadamente 24px */
+        letter-spacing: 0.03em;
+    }
+
+    h4 {
+        font-size: 1.25em; /* Aproximadamente 20px */
+        letter-spacing: 0.025em;
+    }
+
+    h5{
+        font-size: 1em; /* Aproximadamente 16px */
+        letter-spacing: 0.02em;
+    }
+    p,footer a{
+        font-size: 0.9em; /* Aproximadamente 14.4px */
+    }
+}
+
+
+
+/*celulares*/
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75em; /* Aproximadamente 28px */
+        letter-spacing: 0.03em;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Aproximadamente 24px */
+        letter-spacing: 0.025em;
+    }
+
+    h3 {
+        font-size: 1.25em; /* Aproximadamente 20px */
+        letter-spacing: 0.02em;
+    }
+
+    h4 {
+        font-size: 1em; /* Aproximadamente 16px */
+        letter-spacing: 0.015em;
+    }
+
+    h5 {
+        font-size: 0.875em; /* Aproximadamente 14px */
+        letter-spacing: 0.01em;
+    }
+    p {
+        font-size: 0.8em; /* Aproximadamente 12.8px */
+    }
+}

@@ -1,0 +1,34 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo:#eff9ff;
+    --letras:#0f0f0f;
+    --letrasBlancas:#f6f4f4;
+    /*letras bentoga poppins*/
+    --grande:"poppins";
+    --pequeña:"montserrat";
+}
+
+/*
+--fondo degrades
+'picton-blue': {
+        '50': '#eff9ff',
+        '100': '#dcf0fd',
+        '200': '#c0e5fd',
+        '300': '#95d6fb',
+        '400': '#63bef7',
+        *'500': '#4aa7f3',
+        '600': '#2984e7',
+        '700': '#216fd4',
+        '800': '#215aac',
+        '900': '#204d88',
+        '950': '#183053',
+    },
+    
+*/
+
+body{
+    background-color: var(--fondo);
+}
