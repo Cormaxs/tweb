@@ -15,7 +15,7 @@
 
 /*tamaños, letras y demas cosas esteticas*/
 .menu{
-    background-color: var(--fondoMenu);
+    background-color: var(--Blanco);
     backdrop-filter: blur(10px);
     display: flex; justify-content: space-around;
     align-items: center;
@@ -26,10 +26,11 @@
     transition: all .3s ease-in-out;
     text-decoration: none;
     font-size: 1rem;
-    color: var(--Blanco);
+    color: #000000;
+    cursor: pointer;
 }
 .menu a:hover{
-    color:var(--Hover)
+    color:var(--fondoMenu)
 }
 
 .logo{
@@ -40,7 +41,7 @@
     font-size: 2rem;
     letter-spacing: 2px;
     font-weight: 800;
-    color: var(--Blanco);
+    color: var(--fondoMenu);
 }
 
 /*empieza */
@@ -65,7 +66,7 @@
     left: -50px;
     padding: 0 0px 0 50px;
     margin: 18px 0 0 0;
-    background-color: var(--fondoMenu);
+    background-color: var(--Blanco);
     position: absolute;
     list-style: none;
     display: none;
@@ -132,12 +133,14 @@
         width: 40px; height: 40px;
         display: block;
         cursor: pointer;
+        color: #000000;
     }
     .seve{
         display: block;
         box-shadow: 0 2px 3px var(--sombras);
         top: 59px;
         transform: scaleY(1);
+        background:var(--Blanco);
     }
 
 
@@ -147,9 +150,10 @@
 
 /*footer*/
 footer{margin: 20rem 0 0 0;
-    background:linear-gradient(180deg, #4aa7f3, #216fd4);
+    background:#dde5e9;
     text-align: center;
     padding: 2rem 0;
+    color: #000000;
 }
 footer > div{
    max-width: 90%;
@@ -171,6 +175,7 @@ footer div > ol{
 footer div > ol li{
     padding: .3rem 0;
 }footer div > ol li a{
+    color: #000000;
     transition: all .3s ease-in-out;
 }
 footer div > ol li a:hover{
